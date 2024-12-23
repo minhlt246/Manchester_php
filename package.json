@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MinhntPS02968/tradegame.git"
+    "url": "git+https://github.com/minhlt246/Manchester_php.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MinhntPS02968/tradegame/issues"
+    "url": "https://github.com/minhlt246/Manchester_php.git"
   },
-  "homepage": "https://github.com/MinhntPS02968/tradegame#readme",
+  "homepage": "https://github.com/minhlt246/Manchester_php.git",
   "dependencies": {
     "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.77.6"

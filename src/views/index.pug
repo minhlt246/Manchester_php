@@ -10,10 +10,7 @@ block content
                     .row
                         .col-lg-6
                             .wow.fadeInUp(data-wow-delay='0.3s' data-wow-duration='0.5s')
-                                .title-banner.text-uppercase.fw-bold Blockchain
-                                    .d-flex.align-items-end
-                                        .mini.mx-3.lh-1 VS
-                                        span.color-titlel.mx-2.lh-1 Logitech
+                                .title-banner.text-uppercase.fw-bold Sanphamsovn
                             .fs-6.my-4(style='height:96px')
                                 .typed-text(data-text='Alogi is a collaborative digital currency system organization to provide blockchain-based global goods for the logistics industry,developed on a native decentralized operating system for Dapps.')
                             .row.pt-3.pt-lg-0.justify-content-center.justify-content-lg-start
@@ -92,11 +89,11 @@ block content
                         .tab-pane.fade.w-100(role='tabpanel' aria-labelledby='pills-profile-tab' tabindex='1')
                             ul.nav.nav-pills.my-4.btn-class.nav-justified.rounded-4.product-tags(role='tablist')
                                 li.nav-item.me-2(role='presentation')
-                                    button.nav-link.btn.btn-outline-primary.border-2.active(data-bs-toggle='pill' data-bs-target='#clothes' type='button' role='tab' aria-selected='true') clothes
+                                    button.nav-link.btn.border-2.active(data-bs-toggle='pill' data-bs-target='#clothes' type='button' role='tab' aria-selected='true') clothes
                                 li.nav-item.me-2(role='presentation')
-                                    button.nav-link.btn.btn-outline-primary.border-2(data-bs-toggle='pill' data-bs-target='#shoe' type='button' role='tab' aria-selected='true') shoe
+                                    button.nav-link.btn.border-2(data-bs-toggle='pill' data-bs-target='#shoe' type='button' role='tab' aria-selected='true') shoe
                                 li.nav-item.me-0(role='presentation')
-                                    button.nav-link.btn.btn-outline-primary.border-2(data-bs-toggle='pill' data-bs-target='#accessory' type='button' role='tab' aria-selected='true') accessory
+                                    button.nav-link.btn.border-2(data-bs-toggle='pill' data-bs-target='#accessory' type='button' role='tab' aria-selected='true') accessory
 
                 .tab-content
                     #clothes.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-home-tab' tabindex='0')
@@ -108,22 +105,24 @@ block content
                                     style=`visibility: visible; animation-delay: ${delay}s; animation-name: fadeInUp;`
                                 )
                                     .product-item.position-relative.bg-light.overflow-hidden
-                                        img.img-fluid.w-100(src='client/images/product.jpg' alt='')
+                                        img.img-fluid.w-100(src='client/images/product.png' alt='')
                                         .bg-secondary.rounded.text-white.position-absolute.start-0.top-0.m-4.py-1.px-3 New
                                         .text-center.p-4
-                                            a.d-block.h5.mb-2(href='') Fresh Tomato
+                                            a.d-block.h5.mb-2.text-name(href='') Fresh Tomato
                                             span.text-highline-3.me-1 $19.00
                                             span.text-body.text-decoration-line-through $29.00
                                         .d-flex.border-top.box-texts
                                             p.w-50.text-center.border-end.py-2.text-small.fs-6
                                                 a.text-body(href='')
-                                                    i.fa.fa-eye.text-highline-3.me-2 View detail
+                                                    i.fa.fa-eye.text-highline-3.me-2
+                                                    | View detail
                                             p.w-50.text-center.py-2.text-small.fs-6
                                                 a.text-body(href='')
-                                                    i.fa.fa-shopping-bag.text-highline-3.me-2 Add to cart
+                                                    i.fa.fa-shopping-bag.text-highline-3.me-2
+                                                    | Add to cart
 
-                        .col-12.text-center
-                            a.btn.btn-primary.rounded-pill.py-3.px-5(href='') Browse More Products
+                        .col-12.text-center.mt-5
+                            a.btn.btn-primary.rounded-pill.py-3.px-5.btn-submit(href='') Browse More Products
 
                     #shoe.tab-pane.fade.show.p-0(role='tabpanel' aria-labelledby='pills-home-tab' tabindex='0')
                         .row.g-4
@@ -134,22 +133,24 @@ block content
                                     style=`visibility: visible; animation-delay: ${delay}s; animation-name: fadeInUp;`
                                 )
                                     .product-item.position-relative.bg-light.overflow-hidden
-                                        img.img-fluid.w-100(src='client/images/product.jpg' alt='')
+                                        img.img-fluid.w-100(src='client/images/product.png' alt='')
                                         .bg-secondary.rounded.text-white.position-absolute.start-0.top-0.m-4.py-1.px-3 New
                                         .text-center.p-4
-                                            a.d-block.h5.mb-2(href='') Fresh Tomato
+                                            a.d-block.h5.mb-2.text-name(href='') Fresh Tomato
                                             span.text-highline-3.me-1 $19.00
                                             span.text-body.text-decoration-line-through $29.00
                                         .d-flex.border-top.box-texts
                                             p.w-50.text-center.border-end.py-2.text-small.fs-6
                                                 a.text-body(href='')
-                                                    i.fa.fa-eye.text-primary.me-2 View detail
+                                                    i.fa.fa-eye.text-highline-3.me-2
+                                                    | View detail
                                             p.w-50.text-center.py-2.text-small.fs-6
                                                 a.text-body(href='')
-                                                    i.fa.fa-shopping-bag.text-primary.me-2 Add to cart
+                                                    i.fa.fa-shopping-bag.text-highline-3.me-2
+                                                    | Add to cart
 
-                        .col-12.text-center
-                            a.btn.btn-primary.rounded-pill.py-3.px-5(href='') Browse More Products
+                        .col-12.text-center.mt-5
+                            a.btn.btn-primary.rounded-pill.py-3.px-5.btn-submit(href='') Browse More Products
 
                     #accessory.tab-pane.fade.show.p-0(role='tabpanel' aria-labelledby='pills-home-tab' tabindex='0')
                         .row.g-4
@@ -160,83 +161,25 @@ block content
                                     style=`visibility: visible; animation-delay: ${delay}s; animation-name: fadeInUp;`
                                 )
                                     .product-item.position-relative.bg-light.overflow-hidden
-                                        img.img-fluid.w-100(src='client/images/product.jpg' alt='')
+                                        img.img-fluid.w-100(src='client/images/product.png' alt='')
                                         .bg-secondary.rounded.text-white.position-absolute.start-0.top-0.m-4.py-1.px-3 New
                                         .text-center.p-4
-                                            a.d-block.h5.mb-2(href='') Fresh Tomato
+                                            a.d-block.h5.mb-2.text-name(href='') Fresh Tomato
                                             span.text-highline-3.me-1 $19.00
                                             span.text-body.text-decoration-line-through $29.00
                                         .d-flex.border-top.box-texts
-                                            small.w-50.text-center.border-end.py-2.text-small
+                                            p.w-50.text-center.border-end.py-2.text-small.fs-6
                                                 a.text-body(href='')
-                                                    i.fa.fa-eye.text-primary.me-2 View detail
-                                            small.w-50.text-center.py-2.text-small
+                                                    i.fa.fa-eye.text-highline-3.me-2
+                                                    | View detail
+                                            p.w-50.text-center.py-2.text-small.fs-6
                                                 a.text-body(href='')
-                                                    i.fa.fa-shopping-bag.text-primary.me-2 Add to cart
+                                                    i.fa.fa-shopping-bag.text-highline-3.me-2
+                                                    | Add to cart
+                        .col-12.text-center.mt-5
+                            a.btn.btn-primary.rounded-pill.py-3.px-5.btn-submit(href='') Browse More Products
 
-                        .col-12.text-center
-                            a.btn.btn-primary.rounded-pill.py-3.px-5(href='') Browse More Products
-
-        #ecosystem.news
-            .container
-                .text-center.justify-content-center.mb-4.mb-lg-5
-                    .page-title.wow.fadeInUp(data-wow-delay='0.3s' data-wow-duration='0.3s')
-                        .title.px-4.py-1.fs-4 Our Services
-                        h1.text-center.service-title.color-titlel.mb-2 Alogi ecosystem
-                        .fs-5.text-center.service-title.justify-content-center
-                            |    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-
-                .row
-                    .col-md-8.col-lg-6.mx-auto.wow.fadeInLeft(data-wow-delay='0.3s' data-wow-duration='0.5s')
-                        .new-img-block
-                            img.w-100(src='client/images/news-tower.png')
-                            .new-about.translate-middle-x
-                                img.w-100.floating(src='client/images/news-coins.png')
-                    .col-lg-6
-                        .road-content
-                            .line-road.wow.fadeInLeft(data-wow-delay='0.3s' data-wow-duration='0.5s')
-                                .box-list
-                                .box-bottom
-                                .new-icon
-                            .news-item.mb-3
-                                .new-box.d-flex.justify-content-center.align-items-center.wow.fadeInLeft(data-wow-delay='0.3s' data-wow-duration='0.5s')
-                                    img.h-50(src='client/images/news-icon1.png')
-                                .news-block.p-3.justify-content-center.wow.fadeInRight(data-wow-delay='1.1s' data-wow-duration='0.3s')
-                                    .color-titlel.mb-3.fs-5.fw-bold Record information about origin:
-                                    p
-                                        | Blockchain allows recording information about the origin of food from the time it is produced until it reaches the consumer. Every step in the shipping process, including information about the manufacturer, distributor, carrier and retailer, is recorded on the blockchain. This helps ensure transparency and food traceability
-                            .news-item.mb-3
-                                .new-box.d-flex.justify-content-center.align-items-center.wow.fadeInLeft(data-wow-delay='0.3s' data-wow-duration='0.5s')
-                                    img.h-50(src='client/images/news-icon2.png')
-                                .news-block.p-3.wow.fadeInRight(data-wow-delay='1.1s' data-wow-duration='0.3s')
-                                    .color-titlel.mb-3.fs-5.fw-bold Quality and safety management:
-                                    p
-                                        | Blockchain provides a system for tracking food quality and safety. Information about quality control, storage and transportation processes is recorded on the blockchain, helping to ensure that food is not contaminated or damaged during transportation.
-
-                            .news-item.mb-3
-                                .new-box.d-flex.justify-content-center.align-items-center.wow.fadeInLeft(data-wow-delay='0.3s' data-wow-duration='0.5s')
-                                    img.h-50(src='client/images/news-icon3.png')
-                                .news-block.p-3.wow.fadeInRight(data-wow-delay='1.1s' data-wow-duration='0.3s')
-                                    .color-titlel.mb-3.fs-5.fw-bold Track temperature and storage conditions:
-                                    p
-                                        | Blockchain can be used to record information about the temperature and storage conditions of food during transportation.This helps ensure that food is transported and stored in the right environment to ensure quality and safety.
-
-                            .news-item.mb-3
-                                .new-box.d-flex.justify-content-center.align-items-center.wow.fadeInLeft(data-wow-delay='0.3s' data-wow-duration='0.5s')
-                                    img.h-50(src='client/images/news-icon4.png')
-                                .news-block.p-3.wow.fadeInRight(data-wow-delay='1.1s' data-wow-duration='0.3s')
-                                    .color-titlel.mb-3.fs-5.fw-bold Authentication and certification:
-                                    p
-                                        | Blockchain can be used to authenticate and certify important information about food, including organic certification, hygiene certification and origin certification.
-
-                            .news-item.mb-3
-                                .new-box.d-flex.justify-content-center.align-items-center.wow.fadeInLeft(data-wow-delay='0.3s' data-wow-duration='0.5s')
-                                    img.h-50(src='client/images/news-icon6.png')
-                                .news-block.p-3.wow.fadeInRight(data-wow-delay='1.1s' data-wow-duration='0.3s')
-                                    .color-titlel.mb-3.fs-5.fw-bold Transaction and payment:
-                                    p
-                                        | Blockchain provides a secure and transparent payment system for transactions related to food transportation. Stakeholders can use tokens or cryptocurrencies to make payments quickly and securely.
-        #team.post.post-box.pb-4.my-5
+        #post.post.post-box.pb-4.my-5
             .post-content.pb-3.pb-lg-5
                 .container
                     .wow.fadeInUp(data-wow-delay='0.3s' data-wow-duration='0.3s')
@@ -251,38 +194,38 @@ block content
                         .col-lg-4.col-md-6.wow.fadeInUp(data-wow-delay='0.1s' style='visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;')
                             .post-card
                                 img.img-fluid(src='client/images/hh.jpg' alt='')
-                                .bg-light.p-.post-content
-                                    a.d-block.h5.lh-base.mb-4(href='') How to cultivate organic fruits and vegetables in own firm
-                                    .text-muted.border-top.pt-4
+                                .bg-light.p-2.post-content
+                                    a.h5.lh-base.mb-4.text-title(href='') How to cultivate organic fruits and vegetables in own firm
+                                    .text-center.border-top.pt-4
                                         small.me-3
-                                            i.fa.fa-user.text-primary.me-2
+                                            i.fa.fa-user.text-highline-3.me-2
                                             | Admin
                                         small.me-3
-                                            i.fa.fa-calendar.text-primary.me-2
+                                            i.fa.fa-calendar.text-highline-3.me-2
                                             | 01 Jan, 2045
                         .col-lg-4.col-md-6.wow.fadeInUp(data-wow-delay='0.3s' style='visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;')
                             .post-card
                                 img.img-fluid(src='client/images/hh.jpg' alt='')
-                                .bg-light.p-.post-content
-                                    a.d-block.h5.lh-base.mb-4(href='') How to cultivate organic fruits and vegetables in own firm
-                                    .text-muted.border-top.pt-4
+                                .bg-light.p-2.post-content
+                                    a.h5.lh-base.mb-4.text-title(href='') How to cultivate organic fruits and vegetables in own firm
+                                    .border-top.pt-4.text-center
                                         small.me-3
-                                            i.fa.fa-user.text-primary.me-2
+                                            i.fa.fa-user.text-highline-3.me-2
                                             | Admin
                                         small.me-3
-                                            i.fa.fa-calendar.text-primary.me-2
+                                            i.fa.fa-calendar.text-highline-3.me-2
                                             | 01 Jan, 2045
                         .col-lg-4.col-md-6.wow.fadeInUp(data-wow-delay='0.5s' style='visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;')
                             .post-card
                                 img.img-fluid(src='client/images/hh.jpg' alt='')
-                                .bg-light.p-.post-content
-                                    a.d-block.h5.lh-base.mb-4(href='') How to cultivate organic fruits and vegetables in own firm
-                                    .text-muted.border-top.pt-4
+                                .bg-light.p-2.post-content
+                                    a.h5.lh-base.mb-4.text-title(href='') How to cultivate organic fruits and vegetables in own firm
+                                    .text-center.border-top.pt-4
                                         small.me-3
-                                            i.fa.fa-user.text-primary.me-2
+                                            i.fa.fa-user.text-highline-3.me-2
                                             | Admin
                                         small.me-3
-                                            i.fa.fa-calendar.text-primary.me-2
+                                            i.fa.fa-calendar.text-highline-3.me-2
                                             | 01 Jan, 2045
 
 

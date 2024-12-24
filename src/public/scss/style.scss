@@ -7,9 +7,12 @@ $color_6: transparent;
 $color_7: #F8AAFF;
 $color_8: currentColor;
 $color_9: #121127;
-$background-color_1: #44047C;
+$color-active: #03CA9B;
+$color-active2:#77FEDF;
+$color-active3: #3CB815;
+$background-color_1: #77FEDF;
 $background-color_2: #542882;
-$background-color_3: #0a58ca;
+$background-color_3: #3CB815;
 /* media size */
 $mobile-mini-width: 320px;
 $mobile-width: 480px;
@@ -131,7 +134,6 @@ input {
 input[type=number] {
   -moz-appearance: textfield;
 }
-
 .btn {
   &:active {
     transform: translateY(1px) !important;
@@ -185,6 +187,22 @@ body {
     color: $color_7;
   }
 }
+.text-highline {
+  color: $color-active !important;
+}
+.text-highline-2{
+  color: $color-active2 !important;
+}
+.text-highline-3{
+  color: $color-active3 !important;
+}
+.btn-submit{
+  background:$color-active3;
+  border:none;
+  &:hover{
+    background:$color-active;
+  }
+}
 .floating {
   animation-name: floating;
   animation-duration: 3s;
@@ -212,7 +230,7 @@ body {
     }
   }
   .active {
-    color: $color_2 !important;
+    color: $color_2 ;
   }
 }
 .slick-slider {
@@ -331,67 +349,19 @@ body {
 .offcanvas {
   background: #542882;
 }
-.modal-content {
-  background: #38374D;
-  color: $color_4;
-  background: #38374D;
-  color: $color_4;
-  .bg-block {
-    background: #2B2A39;
-    border-radius: 15px;
-    border-radius: 15px;
-  }
-  .form-control {
-    background: #2B2A39;
-    border: 0;
-    color: $color_4;
-    background: #2B2A39;
-    border: 0;
-    color: $color_4;
-    &::placeholder {
-      color: $color_4;
-    }
-  }
-  .input-group-text {
-    background: #2B2A39;
-    border: 0;
-    color: $color_4;
-    background: #2B2A39;
-    border: 0;
-    color: $color_4;
-    &::placeholder {
-      color: $color_4;
-    }
-  }
-}
-.color-titlel {
-  color: $color_7;
-}
-.spin-block {
-  .lds-spinner {
-    box-sizing: border-box;
-    color: $color_8;
-    display: inline-block;
-    position: relative;
-    width: 80px;
-    height: 80px;
-    div {
-      box-sizing: border-box;
-      transform-origin: 40px 40px;
-      animation: lds-spinner 1.2s linear infinite;
-      &:after {
-        box-sizing: border-box;
-        content: " ";
-        display: block;
-        position: absolute;
-        top: 3.2px;
-        left: 36.8px;
-        width: 6.4px;
-        height: 17.6px;
-        border-radius: 20%;
-        background: currentColor;
-      }
-    }
+.text-title {
+  font-size: 25px;
+  color: $color_3;
+  font-weight:700;
+  text-transform: uppercase;
+  display: -webkit-box; /* Kích hoạt box model */
+  -webkit-box-orient: vertical; /* Cài đặt hướng */
+  -webkit-line-clamp: 2; /* Giới hạn 2 dòng */
+  overflow: hidden; /* Ẩn nội dung vượt quá */
+  text-overflow: ellipsis; /* Hiển thị dấu "..." */
+  white-space: normal; /* Cho phép ngắt dòng */
+  &:hover{
+    color: $color_7;
   }
 }
 
@@ -459,261 +429,8 @@ section{
       }
     }
   }
-  .block-title {
-    .title {
-      border-radius: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: $color_9;
-      text-transform: uppercase;
-    }
-  }
-  .introduction {
-    margin-top: -20px;
-    width: 100%;
-    position: relative;
-    &:after{
-      content: '';
-      position: absolute;
-      width: 95%;
-      height: 100%;
-      border-radius: 155px;
-      border-bottom-right-radius: 75px;
-      border: 2px dashed $color_4;
-      border-right: 0;
-      bottom: -5%;
-      right: 0;
-      @include sm{
-        display: none;
-      }
-    }
-    .intro-bg{
-      position: relative;
-      background: url(../images/introduction.png) center center;
-      background-size: 100% 100%;
-      @include sm{
-        background-size: auto 100%;
-      }
-
-      .intro-left{
-        padding-top: 3%;
-        position: relative;
-        .intro-limg{
-          width: 97%;
-          position: relative;
-          z-index: 3;
-        }
-        &:after{
-          content: '';
-          position: absolute;
-          width: 97%;
-          height: 97%;
-          border: 2px dashed $color_4;
-          border-radius: 65px;
-          top:0;
-          right: 0;
-        }
-      }
-
-    }
-  }
   .about{
-    background: url(../images/about-line.png) center bottom no-repeat;
-    background-size: 100% 90%;
-    padding-top: 70px;
-    @include sm{
-      background-size: auto 100%;
-    }
-    .about-benefit{
-      .about-img{
-        width: 60px;
-      }
-      .about-back{
-        width: 17px;
-        height: 17px;
-      }
-    }
-  }
-  .page-box {
-    .page-content {
-      margin-top: 140px;
-      .page-lvl {
-        background: linear-gradient(to right bottom, #612C98, #3D1E5D);
-        backdrop-filter: blur(10px);
-        color: $color_4;
-        border-radius: 30px;
-        border: none;
-        width: 100%;
-        height: 100%;
-        .card-body {
-          text-align: center;
-        }
-      }
-    }
-    .page-img{
-      width: 60px;
-      height: 60px;
-    }
-  }
-  .news{
-    .roadmap-title {
-      font-size: 40px;
-    }
-    .new-img-block{
-      position: relative;
-      .new-about{
-        position: absolute;
-        top: -3%;
-        left: 50%;
-        width: 45%;
-        opacity: 0.8;
-      }
-    }
-    .road-content {
-      position: relative;
-      .line-road {
-        position: absolute;
-        top: -20px;
-        left: 18px;
-        bottom: 100px;
-        width: 3px;
-        border-style: none none none dashed;
-        height : 100% ;
-      }
-      .box-list {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background: #F8AAFF;
-        border-radius: 50px;
-        right: -8px;
-      }
-      .box-bottom{
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background: #F8AAFF;
-        border-radius: 50px;
-        right: -8px;
-        bottom : 0px;
-      }
-      .news-item {
-        position: relative;
-        display: flex;
-        justify-content: flex-end;
 
-        .new-box {
-          position: absolute;
-          width: 65px;
-          height: 65px;
-          background: linear-gradient(90deg, #612C98 0%, #3D1E5D 100%);
-          border-radius: 50px;
-          top: 35px;
-          left: -13px;
-          z-index: 1;
-        }
-      }
-
-        .news-block {
-          border-radius: 20px;
-          width: 100%;
-          min-height: 150px;
-          margin-left: 50px;
-        }
-  }
-
-}
-  .token{
-    .token-block{
-      position: relative;
-      .img-bg{
-        width: 100%;
-        @include sm{
-          height: 300px;
-          object-fit: cover;
-        }
-      }
-      .token-bg{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 35%;
-        @include sm{
-          width: 80%;
-        }
-      }
-    }
-    .tokennomics{
-      position: relative;
-      .token-left{
-        background: linear-gradient(90deg, #612C98 0%, #3D1E5D 100%);
-        border-radius: 20px;
-        width: 80%;
-        @include sm{
-          width: 100%;
-          margin-bottom: 40px;
-        }
-        .img-list{
-          width: 25px;
-        }
-      }
-      .token-right{
-        position: absolute;
-        background: $background-color_2;
-        border-radius: 50%;
-        border: 1px dashed $color_4;
-        height: 100%;
-        top:0;
-        right: 0;
-        .chart-img-block{
-          height: 100%;
-          position: relative;
-          .chart{
-            height: 100%;
-          }
-          .chart-icon{
-            position: absolute;
-            top:50%;
-            left: 50%;
-            width: 50%;
-          }
-        }
-        @include sm{
-          position: relative;
-          width: 100%;
-          height: auto;
-          .chart-img-block{
-            width: 100%;
-            height: auto;
-            .chart{
-              width: 100%;
-              height: auto;
-            }
-          }
-        }
-      }
-    }
-    .functional{
-      --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F8AAFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-      --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F8AAFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-      .accordion-item{
-        background: linear-gradient(135deg, #703EA3 0%, #3D1E5D 100%);
-        border: none;
-        border-radius: 20px;
-        .accordion-header{
-          .accordion-button{
-            border-radius: 20px;
-            background: transparent;
-            box-shadow: none;
-            color: $color_7;
-          }
-        }
-        .accordion-body{
-          color: white;
-        }
-      }
-    }
   }
   .post-box {
     .post-content {
@@ -749,7 +466,79 @@ section{
       border-top: 1px groove #542882;
     }
   }
+  .out-product {
+    .product-item {
+      box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+      img {
+        transition: .8s;
+      }
+      &:hover {
+        img {
+          transform: scale(1.040);
+        }
+      }
+      small {
+        a {
+          &:hover {
+            color: var(--primary) !important;
+          }
+        }
+      }
+      .product-img {
+        width: 100%;
+        height: auto;
+      }
 
+      .text-name {
+        font-size: 20px;
+        color: $color_3;
+
+        :hover {
+          color: $color-active3;
+        }
+      }
+    }
+
+    .product-tags {
+      .nav-item {
+        .nav-link {
+          color: #000;
+          font-weight: normal;
+          border: 1px solid $background-color_3;
+          background: none;
+          font-size: 17px;
+          border-radius: 30px;
+          &.active {
+            color: #FF5722;
+            background: $background-color_3;
+            font-size: 17px;
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              height: 1px; // Độ dày đường line
+              background-color: #FF5722; // Màu cam cho đường line
+              border-radius: 8px; // Bo góc để đường line mềm mại hơn
+              transform: scaleX(0); // Ban đầu đường line có độ dài 0
+              transform-origin: bottom right; // Khởi tạo từ phải sang trái
+              transition: transform 0.3s ease-out; // Hiệu ứng mượt mà khi chuyển động
+            }
+          }
+
+          &:hover {
+            color: #FF7043;
+          }
+        }
+
+        .nav-link.active::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+      }
+    }
+  }
 }
 footer {
   background-color: #3CB815;

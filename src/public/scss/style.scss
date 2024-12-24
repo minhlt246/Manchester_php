@@ -216,12 +216,6 @@ body {
   width: 150px;
   height: auto;
 }
-.img-logo-short {
-  width: 60px;
-}
-.text-highline {
-  color: $color_7;
-}
 .nav-item {
   .nav-link {
     color: $color_1;
@@ -364,7 +358,9 @@ body {
     color: $color_7;
   }
 }
-
+.color-titlel {
+  color: $color_7;
+}
 header {
   background-color: #3CB815;
   .menu{
@@ -392,7 +388,7 @@ section{
   .banner {
     position: relative;
     z-index: 5;
-    min-height: 100vh;
+    height: 100%;
     .banner-mb{
       @include sm{
         padding-top: 240px;
@@ -429,46 +425,29 @@ section{
       }
     }
   }
-  .about{
+  .about {
+    padding-top: 70px;
+    @include media(sm, md) {
+      background-size: auto 100%;
+    }
 
-  }
-  .post-box {
-    .post-content {
+    .about-box {
+      .about-benefit {
+        display: flex;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        animation: fadeInLeft 0.3s ease-in-out 0.7s;
 
-      .post-card {
-        background: #3B1265;
-        backdrop-filter: invert(80%);
-        color: $color_1;
-        border-radius: 30px;
-        border: none;
-        width: 100%;
-        .card-body {
-          width: 100%;
-          height: 100%;
-          text-align: center;
-        }
       }
-    }
-    .team-img {
-      width: 100%;
-      height: auto;
-    }
-    .team-banner {
-      z-index: 1;
-    }
-    .team-people {
-      margin-top: -60px;
-      text-align: center;
-      width: 100px;
-      height: auto;
-    }
-    .line-team {
-      border-top: 1px groove #542882;
     }
   }
   .out-product {
     .product-item {
-      box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+      position: relative;
+      background-color: #f8f9fa;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       img {
         transition: .8s;
       }
@@ -498,7 +477,6 @@ section{
         }
       }
     }
-
     .product-tags {
       .nav-item {
         .nav-link {
@@ -518,12 +496,7 @@ section{
               bottom: 0;
               left: 0;
               right: 0;
-              height: 1px; // Độ dày đường line
-              background-color: #FF5722; // Màu cam cho đường line
-              border-radius: 8px; // Bo góc để đường line mềm mại hơn
-              transform: scaleX(0); // Ban đầu đường line có độ dài 0
-              transform-origin: bottom right; // Khởi tạo từ phải sang trái
-              transition: transform 0.3s ease-out; // Hiệu ứng mượt mà khi chuyển động
+
             }
           }
 
@@ -537,6 +510,75 @@ section{
           transform-origin: bottom left;
         }
       }
+    }
+  }
+  .post{
+    .post-content {
+      .post-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+        .post-content-nav {
+          padding: 20px;
+          color: #333;
+
+          .h5 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #2c3e50;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: #16a085;
+            }
+          }
+
+          .text-center {
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+
+            small {
+              font-size: 0.875rem;
+              color: #7f8c8d;
+              margin-right: 10px;
+
+              i {
+                color: #16a085;
+              }
+
+              &:first-child {
+                margin-left: 0;
+              }
+
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+
+    }
+    .team-img {
+      width: 100%;
+      height: auto;
+    }
+    .team-banner {
+      z-index: 1;
+    }
+    .team-people {
+      margin-top: -60px;
+      text-align: center;
+      width: 100px;
+      height: auto;
+    }
+    .line-team {
+      border-top: 1px groove #542882;
     }
   }
 }

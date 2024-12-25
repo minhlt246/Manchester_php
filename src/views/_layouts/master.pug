@@ -6,7 +6,7 @@ html
         meta(name='viewport' content='width=device-width, initial-scale=1')
         meta(name='keywords' content='')
         meta(name='description' content='')
-        title ALOGI
+        title SanPhamSo
         link(rel='icon' href='./client/images/navigation.png' type='image/gif' sizes='16x16')
         // main css
         link(rel='stylesheet' href='client/css/bootstrap.min.css')
@@ -19,12 +19,11 @@ html
         link(rel='stylesheet' href='client/css/style.css')
 
     body(data-bs-spy="scroll" data-bs-target="#menu-scroll" data-bs-offset="60" tabindex="0")
-        .landing
-            include ../_partials/header
-            block content
-            include ../_partials/footer
-            a.back-to-top(href='javascript:void(0)')
-                i.fas.fa-arrow-to-top
+        include ../_partials/header
+        block content
+        include ../_partials/footer
+        a.back-to-top(href='javascript:void(0)')
+            i.fas.fa-arrow-to-top
         // main js
         script(src='client/js/all.min.js')
         script(src='client/js/jquery.min.js')

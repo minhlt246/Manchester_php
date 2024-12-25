@@ -1,0 +1,117 @@
+extends _layouts/master
+
+block content
+    section
+        .product
+            .container.py-5
+                h1.mb-4 SanPhamSo shop
+                .row.g-4
+                    .col-lg-12
+                        .row.g-4
+                            .col-lg-3.mb-3
+                                .input-group.mx-auto.d-flex
+                                    input.form-control.p-3(type='search' placeholder='keywords' aria-describedby='search-icon-1')
+                                    span#search-icon-1.input-group-text.p-3
+                                        i.fa.fa-search
+                            .col-lg-6
+                            .col-lg-3.mb-3
+                                select.form-select.form-select-lg.rounded-5(aria-label='Large select example')
+                                    option(selected='') Soft
+                                    option(value='1') One
+                                    option(value='2') Two
+                                    option(value='3') Three
+                .row.g-4
+                    .col-lg-3
+                        .row.g-4.product-nest
+                            .col-lg-12.product-categories
+                                .mb-3
+                                    h4.text-black Categories
+                                    ul.list-unstyled.fruite-categorie
+                                        li
+                                            .d-flex.justify-content-between.fruite-name
+                                                a(href='#').fruite-price
+                                                    i.fa-solid.fa-briefcase-blank.me-2
+                                                    | Vali
+                                                span.text-black (3)
+                                        li
+                                            .d-flex.justify-content-between.fruite-name
+                                                a(href='#').fruite-price
+                                                    i.fa-solid.fa-shirt.me-2
+                                                    | clothes
+                                                span.text-black (5)
+                                        li
+                                            .d-flex.justify-content-between.fruite-name
+                                                a(href='#').fruite-price
+                                                    i.fa-solid.fa-hat-cowboy-side.me-2
+                                                    | hat
+                                                span.text-black (2)
+                                        li
+                                            .d-flex.justify-content-between.fruite-name
+                                                a(href='#').fruite-price
+                                                    i.fa-brands.fa-shopify.me-2
+                                                    | cosmetics
+                                                span.text-black (8)
+                                        li
+                                            .d-flex.justify-content-between.fruite-name
+                                                a(href='#').fruite-price
+                                                    i.fa-brands.fa-windows.me-2
+                                                    | Electronics
+                                                span.text-black (5)
+                            .col-lg-12
+                                .mb-3.product-sev
+                                    h4.mb-2.text-black Price
+                                    input#rangeInput.form-range.w-100(type='range' name='rangeInput' min='0' max='10000' value='0' oninput='amount.value=rangeInput.value')
+                                    output#amount(name='amount' min-velue='0' max-value='10000' for='rangeInput') 0
+                            .col-lg-12
+                                .mb-3.product-additional
+                                    h4.text-black Additional
+                                    .mb-2.additional
+                                        input#Categories-1.me-2.additional-input(type='radio' name='Categories-1' value='Beverages')
+                                        label(for='Categories-1')  Organic
+                                    .mb-2.additional
+                                        input#Categories-2.me-2.additional-input(type='radio' name='Categories-1' value='Beverages')
+                                        label(for='Categories-2')  Fresh
+                                    .mb-2.additional
+                                        input#Categories-3.me-2.additional-input(type='radio' name='Categories-1' value='Beverages')
+                                        label(for='Categories-3')  Sales
+                                    .mb-2.additional
+                                        input#Categories-4.me-2.additional-input(type='radio' name='Categories-1' value='Beverages')
+                                        label(for='Categories-4')  Discount
+                                    .mb-2.additional
+                                        input#Categories-5.me-2.additional-input(type='radio' name='Categories-1' value='Beverages')
+                                        label(for='Categories-5')  Expired
+
+                    .col-lg-9
+                            .row.g-4.justify-content-center
+                                - for (var i = 1; i < 10; i++)
+                                    .col-md-6.col-lg-6.col-xl-4
+                                        .rounded.position-relative.product-item-nav
+                                            .product-img
+                                                img.img-fluid-sev.w-100.rounded-top(src='client/images/product-' + i + '.jpg' alt='Product Image')
+                                            .text-white.bg-secondary.px-3.py-1.rounded.position-absolute(style='top: 10px; left: 10px;') Sản Phẩm
+                                            .p-2
+                                                h4.title Grapes
+                                                p.text-black.text-center
+                                                    | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
+                                                p.text-center.text-dark.fs-5.fw-bold.mb-0 $4.99 / kg
+                                                .d-flex.justify-content-between
+                                                    p.w-50.text-center.border-end.py-2.text-small.fs-6
+                                                        a.text-body(href='')
+                                                            i.fa.fa-eye.text-highline-3
+                                                            | View detail
+                                                    p.w-50.text-center.py-2.text-small.fs-6
+                                                        a.text-body(href='')
+                                                            i.fa.fa-shopping-bag.text-highline-3
+                                                            | Add to cart
+
+
+                .col-12
+                    .pagination.d-flex.justify-content-center.mt-5
+                        a.rounded(href='#') &laquo;
+                        a.active.rounded(href='#') 1
+                        a.rounded(href='#') 2
+                        a.rounded(href='#') 3
+                        a.rounded(href='#') 4
+                        a.rounded(href='#') 5
+                        a.rounded(href='#') 6
+                        a.rounded(href='#') &raquo;

@@ -2,26 +2,42 @@ extends _layouts/master
 
 block content
     section
-        #home.banner
-            img.w-100.d-none.d-lg-block(src='client/images/banner.jpg')
-            img.w-100.d-lg-none.banner-mb(src='client/images/banner-mb.png')
-            .banner-content
-                .container
-                    .row
-                        .col-lg-6
-                            .wow.fadeInUp(data-wow-delay='0.3s' data-wow-duration='0.5s')
-                                .title-banner.text-uppercase.fw-bold Sanphamsovn
-                            .fs-6.my-4(style='height:96px')
-                                .typed-text(data-text='Alogi is a collaborative digital currency system organization to provide blockchain-based global goods for the logistics industry,developed on a native decentralized operating system for Dapps.')
-                            .row.pt-3.pt-lg-0.justify-content-center.justify-content-lg-start
-                                .col-5.col-lg-4.wow.fadeInUp(data-wow-delay='0.5s' data-wow-duration='0.3s')
-                                    button.btn-double.w-100.hvr-float(type='button')
-                                        .btn.text-btn.py-3.fs-6.lh-1.w-100 Learn More
-                                .col-5.col-lg-4.wow.fadeInUp(data-wow-delay='0.7s' data-wow-duration='0.3s')
-                                    button.btn-about.w-100.hvr-float(type='button')
-                                        .btn.text-btn.py-3.fs-6.lh-1.w-100 Watch Video
-
-
+        .home
+            #carouselExampleInterval.carousel.slide.home-banner(data-bs-ride='carousel')
+                .carousel-inner
+                    .carousel-item.active.home-wrapper(data-bs-interval='10000')
+                        img.d-block.w-100(src='./client/images/slider_1.png' alt='...')
+                        .home-slide
+                            h1.title-home Flash Sale
+                            p.information Mua &dstrok;&ocirc;i gi&#x1EA3;m b&#x1ED9;i
+                            p &Aacute;p d&#x1EE5;ng cho nhi&#x1EC1;u s&#x1EA3;n ph&#x1EA9;m
+                            button.btn.btn-more(type='button' title='Xem chi tiết')
+                                span Xem chi ti&#x1EBF;t
+                                i.fa-solid.fa-right
+                    .carousel-item.home-wrapper(data-bs-interval='2000')
+                        img.d-block.w-100(src='./client/images/slider_2.png' alt='...')
+                        .home-slide
+                            h1.title-home Flash Sale
+                            p.information Mua &dstrok;&ocirc;i gi&#x1EA3;m b&#x1ED9;i
+                            p &Aacute;p d&#x1EE5;ng cho nhi&#x1EC1;u s&#x1EA3;n ph&#x1EA9;m
+                            button.btn.btn-more(type='button' title='Xem chi tiết')
+                                span Xem chi ti&#x1EBF;t
+                                i.fa-solid.fa-right
+                    .carousel-item.home-wrapper
+                        img.d-block.w-100(src='./client/images/slider_2.png' alt='...')
+                        .home-slide
+                            h1.title-home Flash Sale
+                            p.information Mua &dstrok;&ocirc;i gi&#x1EA3;m b&#x1ED9;i
+                            p &Aacute;p d&#x1EE5;ng cho nhi&#x1EC1;u s&#x1EA3;n ph&#x1EA9;m
+                            button.btn.btn-more(type='button' title='Xem chi tiết')
+                                span Xem chi ti&#x1EBF;t
+                                i.fa-solid.fa-right
+                button.carousel-control-prev(type='button' data-bs-target='#carouselExampleInterval' data-bs-slide='prev')
+                    span.carousel-control-prev-icon(aria-hidden='true')
+                    span.visually-hidden Previous
+                button.carousel-control-next(type='button' data-bs-target='#carouselExampleInterval' data-bs-slide='next')
+                    span.carousel-control-next-icon(aria-hidden='true')
+                    span.visually-hidden Next
 
         #about.about
             .container

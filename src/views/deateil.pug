@@ -110,10 +110,10 @@ block content
                 .tab-pane.fade.w-100(role='tabpanel' aria-labelledby='pills-profile-tab' tabindex='1')
                     ul.nav.nav-pills.my-4.btn-class.nav-justified.rounded-4.product-dtail(role='tablist')
                         li.nav-item(role='presentation')
-                            button.nav-link.py-lg-3.active(data-bs-toggle='pill' data-bs-target='#referral' type='button' role='tab' aria-selected='true') Thông Tin Sản Phẩm
+                            button.nav-link.active(data-bs-toggle='pill' data-bs-target='#referral' type='button' role='tab' aria-selected='true') Thông Tin Sản Phẩm
 
                         li.nav-item(role='presentation')
-                            button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#account' type='button' role='tab' aria-selected='false' tabindex='-1') Chính Sách Bảo Hành
+                            button.nav-link(data-bs-toggle='pill' data-bs-target='#account' type='button' role='tab' aria-selected='false' tabindex='-1') Chính Sách Bảo Hành
 
                     .tab-content.my-3
                         #referral.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-home-tab' tabindex='0')
@@ -209,32 +209,9 @@ block content
                                 p Liên hệ với chúng tôi để biết thêm chi tiết.
 
                 h1.title.text-uppercase.text-center.my-4 Sản Phẩm Liên Quan
-                .vesitable
-                    .responsive
-                        - for (var i = 1; i < 10; i++)
-                            .owl-stage
-                                .owl-item.cloned(style='width: 305.25px; margin-right: 25px;')
-                                    .border.border-primary.rounded.position-relative.vesitable-item
-                                        .vesitable-img
-                                            img.img-fluid.w-100.rounded-top(src='img/vegetable-item-5.jpg' alt='')
-                                        .text-white.bg-primary.px-3.py-1.rounded.position-absolute(style='top: 10px; right: 10px;') Vegetable
-                                        .p-4.pb-0.rounded-bottom
-                                            h4 Potatoes
-                                            p
-                                                | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                            .d-flex.justify-content-between.flex-lg-wrap
-                                                p.text-dark.fs-5.fw-bold $7.99 / kg
-                                                a.btn.border.border-secondary.rounded-pill.px-3.py-1.mb-4.text-primary(href='#')
-                                                    i.fa.fa-shopping-bag.me-2.text-primary
-                                                    |  Add to cart
 
-                    .owl-nav
-                        .owl-prev
-                            i.fa-solid.fa-left
-                        .owl-next
-                            i.fa-solid.fa-right
-                    .owl-dots
-                        .owl-dot.active
-                            span
-                        .owl-dot
-                            span
+
+
+
+
+

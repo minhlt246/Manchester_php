@@ -2,285 +2,217 @@ extends _layouts/master
 
 block content
     section
-        .deatail
-            .container.py-5
-                .row.g-4.mb-5
-                    .col-lg-8.col-xl-9
-                        .row.g-4
-                            .col-lg-6
-                                .border.rounded
-                                    a(href='#')
-                                        img.img-fluid.rounded(src='img/single-item.jpg' alt='Image')
-                            .col-lg-6
-                                h4.fw-bold.mb-3 Brocoli
-                                p.mb-3 Category: Vegetables
-                                h5.fw-bold.mb-3 3,35 $
-                                .d-flex.mb-4
-                                    i.fa.fa-star.text-secondary
-                                    i.fa.fa-star.text-secondary
-                                    i.fa.fa-star.text-secondary
-                                    i.fa.fa-star.text-secondary
-                                    i.fa.fa-star
-                                p.mb-4
-                                    | The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.
-                                p.mb-4
-                                    | Susp endisse ultricies nisi vel quam suscipit. Sabertooth peacock flounder; chain pickerel hatchetfish, pencilfish snailfish
-                                .input-group.quantity.mb-5(style='width: 100px;')
-                                    .input-group-btn
-                                        button.btn.btn-sm.btn-minus.rounded-circle.bg-light.border
-                                            i.fa.fa-minus
-                                    input.form-control.form-control-sm.text-center.border-0(type='text' value='1')
-                                    .input-group-btn
-                                        button.btn.btn-sm.btn-plus.rounded-circle.bg-light.border
-                                            i.fa.fa-plus
-                                a.btn.border.border-secondary.rounded-pill.px-4.py-2.mb-4.text-primary(href='#')
-                                    i.fa.fa-shopping-bag.me-2.text-primary
-                                    |  Add to cart
-                            .col-lg-12
-                                nav
-                                    .nav.nav-tabs.mb-3
-                                        button#nav-about-tab.nav-link.border-white.border-bottom-0(type='button' role='tab' data-bs-toggle='tab' data-bs-target='#nav-about' aria-controls='nav-about' aria-selected='false') Description
-                                        button#nav-mission-tab.nav-link.border-white.border-bottom-0.active(type='button' role='tab' data-bs-toggle='tab' data-bs-target='#nav-mission' aria-controls='nav-mission' aria-selected='true') Reviews
-                                .tab-content.mb-5
-                                    #nav-about.tab-pane(role='tabpanel' aria-labelledby='nav-about-tab')
-                                        p
-                                            | The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.
-                                            | Susp endisse ultricies nisi vel quam suscipit
-                                        p
-                                            | Sabertooth peacock flounder; chain pickerel hatchetfish, pencilfish snailfish filefish Antarctic
-                                            | icefish goldeye aholehole trumpetfish pilot fish airbreathing catfish, electric ray sweeper.
-                                        .px-2
-                                            .row.g-4
-                                                .col-6
-                                                    .row.bg-light.align-items-center.text-center.justify-content-center.py-2
-                                                        .col-6
-                                                            p.mb-0 Weight
-                                                        .col-6
-                                                            p.mb-0 1 kg
-                                                    .row.text-center.align-items-center.justify-content-center.py-2
-                                                        .col-6
-                                                            p.mb-0 Country of Origin
-                                                        .col-6
-                                                            p.mb-0 Agro Farm
-                                                    .row.bg-light.text-center.align-items-center.justify-content-center.py-2
-                                                        .col-6
-                                                            p.mb-0 Quality
-                                                        .col-6
-                                                            p.mb-0 Organic
-                                                    .row.text-center.align-items-center.justify-content-center.py-2
-                                                        .col-6
-                                                            p.mb-0 &Scy;heck
-                                                        .col-6
-                                                            p.mb-0 Healthy
-                                                    .row.bg-light.text-center.align-items-center.justify-content-center.py-2
-                                                        .col-6
-                                                            p.mb-0 Min Weight
-                                                        .col-6
-                                                            p.mb-0 250 Kg
-                                    #nav-mission.tab-pane.active(role='tabpanel' aria-labelledby='nav-mission-tab')
-                                        .d-flex
-                                            img.img-fluid.rounded-circle.p-3(src='img/avatar.jpg' style='width: 100px; height: 100px;' alt='')
-                                            div
-                                                p.mb-2(style='font-size: 14px;') April 12, 2024
-                                                .d-flex.justify-content-between
-                                                    h5 Jason Smith
-                                                    .d-flex.mb-3
-                                                        i.fa.fa-star.text-secondary
-                                                        i.fa.fa-star.text-secondary
-                                                        i.fa.fa-star.text-secondary
-                                                        i.fa.fa-star.text-secondary
-                                                        i.fa.fa-star
-                                                p
-                                                    | The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic
-                                                    | words etc. Susp endisse ultricies nisi vel quam suscipit
-                                        .d-flex
-                                            img.img-fluid.rounded-circle.p-3(src='img/avatar.jpg' style='width: 100px; height: 100px;' alt='')
-                                            div
-                                                p.mb-2(style='font-size: 14px;') April 12, 2024
-                                                .d-flex.justify-content-between
-                                                    h5 Sam Peters
-                                                    .d-flex.mb-3
-                                                        i.fa.fa-star.text-secondary
-                                                        i.fa.fa-star.text-secondary
-                                                        i.fa.fa-star.text-secondary
-                                                        i.fa.fa-star
-                                                        i.fa.fa-star
-                                                p.text-dark
-                                                    | The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic
-                                                    | words etc. Susp endisse ultricies nisi vel quam suscipit
-                                    #nav-vision.tab-pane(role='tabpanel')
-                                        p.text-dark
-                                            | Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                                            | amet diam et eos labore. 3
-                                        p.mb-0
-                                            | Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore.
-                                            | Clita erat ipsum et lorem et sit
-                            form(action='#')
-                                h4.mb-5.fw-bold Leave a Reply
-                                .row.g-4
-                                    .col-lg-6
-                                        .border-bottom.rounded
-                                            input.form-control.border-0.me-4(type='text' placeholder='Yur Name *')
-                                    .col-lg-6
-                                        .border-bottom.rounded
-                                            input.form-control.border-0(type='email' placeholder='Your Email *')
-                                    .col-lg-12
-                                        .border-bottom.rounded.my-4
-                                            textarea.form-control.border-0(name='' id='' cols='30' rows='8' placeholder='Your Review *' spellcheck='false')
-                                    .col-lg-12
-                                        .d-flex.justify-content-between.py-3.mb-5
-                                            .d-flex.align-items-center
-                                                p.mb-0.me-3 Please rate:
-                                                .d-flex.align-items-center(style='font-size: 12px;')
-                                                    i.fa.fa-star.text-muted
-                                                    i.fa.fa-star
-                                                    i.fa.fa-star
-                                                    i.fa.fa-star
-                                                    i.fa.fa-star
-                                            a.btn.border.border-secondary.text-primary.rounded-pill.px-4.py-3(href='#')  Post Comment
-                    .col-lg-4.col-xl-3
-                        .row.g-4.fruite
-                            .col-lg-12
-                                .input-group.w-100.mx-auto.d-flex.mb-4
-                                    input.form-control.p-3(type='search' placeholder='keywords' aria-describedby='search-icon-1')
-                                    span#search-icon-1.input-group-text.p-3
-                                        i.fa.fa-search
-                                .mb-4
-                                    h4 Categories
-                                    ul.list-unstyled.fruite-categorie
+        .detail-product.mt-5
+            .container.py-3.py-lg-5
+                .row
+                    .col-lg-6
+                        .product-slider-bar.py-3.mb-3
+                            #slider-product.carousel.slide.carousel-fade(data-bs-ride="carousel")
+                                .carousel-inner.h-75
+                                    .carousel-item.active.h-50.custom-carousel-item
+                                        img.d-block.w-100.px-3.custom-carousel-img(src='client/images/product-1.jpg')
+                                    .carousel-item.h-50.custom-carousel-item
+                                        img.d-block.w-100.px-3.custom-carousel-img(src='client/images/product-2.jpg')
+                                    .carousel-item.h-50.custom-carousel-item
+                                        img.d-block.w-100.px-3.custom-carousel-img(src='client/images/product-3.jpg')
+                                    .carousel-item.h-50.custom-carousel-item
+                                        img.d-block.w-100.px-3.custom-carousel-img(src='client/images/product-4.jpg')
+                                .carousel-indicators.d-block.mx-0.mb-0.mt-4.custom-carousel-indicators
+                                    .row.mx-0
+                                        .col-3
+                                            button.w-100.h-auto.active(type='button' data-bs-target='#slider-product' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+                                                img.d-block.w-100.rounded-4.custom-indicator-img(src='client/images/product-1.jpg')
+                                        .col-3
+                                            button.w-100.h-auto(type='button' data-bs-target='#slider-product' data-bs-slide-to='1' aria-label='Slide 2')
+                                                img.d-block.w-100.rounded-4.custom-indicator-img(src='client/images/product-2.jpg')
+                                        .col-3
+                                            button.w-100.h-auto(type='button' data-bs-target='#slider-product' data-bs-slide-to='2' aria-label='Slide 3')
+                                                img.d-block.w-100.rounded-4.custom-indicator-img(src='client/images/product-3.jpg')
+                                        .col-3
+                                            button.w-100.h-auto(type='button' data-bs-target='#slider-product' data-bs-slide-to='3' aria-label='Slide 4')
+                                                img.d-block.w-100.rounded-4.custom-indicator-img(src='client/images/product-4.jpg')
+
+                    .col-12.col-md-6.col-lg-6.review-product
+                        h1.title-product Baby Three Year Version 3 Vinyl Doll ( Ch&iacute;nh H&atilde;ng )
+                        .reviews_details_product
+                            .sapo-product-reviews-badge.sapo-product-reviews-badge-detail(data-id='37003102')
+                        .inventory_quantity
+                            span.mb-break
+                                span.stock-brand-title Th&#x1B0;&#x1A1;ng hi&#x1EC7;u:
+                                span.a-vendor
+                                    | BabyThree
+                            span.line &nbsp;&nbsp;|&nbsp;&nbsp;
+                            span.mb-break
+                                span.stock-brand-title T&igrave;nh tr&#x1EA1;ng:
+                                span.a-stock
+                                    span.a-stock C&ograve;n h&agrave;ng
+                        form#add-to-cart-form.form-inline(enctype='multipart/form-data' data-cart-form='' action='/cart/add' method='post')
+                            .price-box.clearfix
+                                span.special-price
+                                    span.price.product-price 390.000&#x20AB;
+                                    meta(itemprop='price' content='390000')
+                                    meta(itemprop='priceCurrency' content='VND')
+                                // Giá Khuyến mại
+                                span.old-price(itemprop='priceSpecification' itemscope='' itemtype='' style='display: none;')
+                                    del.price.product-price-old(style='display: none;')
+                                    meta(itemprop='price' content='0')
+                                    meta(itemprop='priceCurrency' content='VND')
+                                // Giá gốca
+                            .product-summary
+                                .rte
+                                    p
+                                        strong &rarr; THÔNG TIN SẢN PHẨM:
+                                    p
+                                        strong - TÊN SẢN PHẨM:
+                                        | Áo Thun Nam Cotton Basic (Chính Hãng)
+                                    p
+                                        strong - THƯƠNG HIỆU:
+                                        | Coolmate
+                                    p
+                                        strong - KÍCH THƯỚC:
+                                        | S, M, L, XL
+                                    p
+                                        strong - MÀU SẮC:
+                                        | Đen, Trắng, Xanh
+                                    p
+                                        strong - CHẤT LIỆU:
+                                        | 100% Cotton
+                                    p
+                                        strong - BAO BÌ ĐÓNG GÓI:
+                                        | Túi giấy thân thiện môi trường
+                            .form-product
+                                .select-swatch
+                                    .swatch.clearfix(data-option-index='0')
+                                        .header Title
+                                        .swatch-element.blindbox.available(data-value='Blindbox')
+                                            input#swatch-0-blindbox(type='radio' name='option-0' value='Blindbox' checked='' data-price='390000')
+                                            label(for='swatch-0-blindbox')
+                                                | Blindbox
+                                                img.crossed-out(src='2' alt='blindbox')
+                                        .swatch-element.nguyen-set-6-blindbox.available(data-value='Nguyên set 6 blindbox')
+                                            input#swatch-0-nguyen-set-6-blindbox(type='radio' name='option-0' value='Nguyên set 6 blindbox' data-price='2340000')
+                                            label(for='swatch-0-nguyen-set-6-blindbox')
+                                                | Nguy&ecirc;n set 6 blindbox
+                                                img.crossed-out(src='' alt='nguyen-set-6-blindbox')
+
+                                .form-group.mb-4
+                                    .flex-quantity.d-flex.align-content-center
+                                        .custom.custom-btn-number.show
+                                            label.sl.section S&#x1ED1; l&#x1B0;&#x1EE3;ng:
+                                            .form-control.d-flex.justify-content-between.border-0.bt-buy
+                                                button.btn_num.num_1.button.button_qty.bt-buy(onclick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro ) && qtypro > 1 ) result.value--;return false;" type='button') -
+                                                input#qtym.form-control.prd_quantity(type='text' name='quantity' value='1' maxlength='3' onkeypress='if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;' onchange='if(this.value == 0)this.value=1;')
+                                                button.btn_num.num_2.button.button_qty.bt-buy(onclick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro )) result.value++;return false;" type='button') +
+                                        a.btn.btn-mua.btn-primari.mt-3.p-2.align-content-center.ms-3.hvr-float(type='submit' href='cart.html')
+                                            p.mb-0 Thêm Vào Giỏ Hàng
+
+
+                .tab-pane.fade.w-100(role='tabpanel' aria-labelledby='pills-profile-tab' tabindex='1')
+                    ul.nav.nav-pills.my-4.btn-class.nav-justified.rounded-4.product-dtail(role='tablist')
+                        li.nav-item(role='presentation')
+                            button.nav-link.py-lg-3.active(data-bs-toggle='pill' data-bs-target='#referral' type='button' role='tab' aria-selected='true') Thông Tin Sản Phẩm
+
+                        li.nav-item(role='presentation')
+                            button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#account' type='button' role='tab' aria-selected='false' tabindex='-1') Chính Sách Bảo Hành
+
+                    .tab-content.my-3
+                        #referral.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-home-tab' tabindex='0')
+                            .product-summary
+                                .product-description
+                                    h2.title Mô Tả Sản Phẩm
+                                    p
+                                        | Đây là sản phẩm
+                                        strong Baby Three Year Version 3 Vinyl Doll
+                                        | chính hãng, được thiết kế tinh xảo với chất liệu cao cấp, phù hợp cho cả trẻ em và những người yêu thích sưu tầm.
+
+                                .product-specifications
+                                    h3 Thông Số Kỹ Thuật
+                                    ul
                                         li
-                                            .d-flex.justify-content-between.fruite-name
-                                                a(href='#')
-                                                    i.fas.fa-apple-alt.me-2
-                                                    | Apples
-                                                span (3)
+                                            strong Kích thước:
+                                            | ~20cm
                                         li
-                                            .d-flex.justify-content-between.fruite-name
-                                                a(href='#')
-                                                    i.fas.fa-apple-alt.me-2
-                                                    | Oranges
-                                                span (5)
+                                            strong Chất liệu:
+                                            | PVC / ABS
                                         li
-                                            .d-flex.justify-content-between.fruite-name
-                                                a(href='#')
-                                                    i.fas.fa-apple-alt.me-2
-                                                    | Strawbery
-                                                span (2)
+                                            strong Màu sắc:
+                                            | Đa dạng
                                         li
-                                            .d-flex.justify-content-between.fruite-name
-                                                a(href='#')
-                                                    i.fas.fa-apple-alt.me-2
-                                                    | Banana
-                                                span (8)
+                                            strong Độ tuổi phù hợp:
+                                            | Trẻ em từ 3 tuổi trở lên
                                         li
-                                            .d-flex.justify-content-between.fruite-name
-                                                a(href='#')
-                                                    i.fas.fa-apple-alt.me-2
-                                                    | Pumpkin
-                                                span (5)
-                            .col-lg-12
-                                h4.mb-4 Featured products
-                                .d-flex.align-items-center.justify-content-start
-                                    .rounded(style='width: 100px; height: 100px;')
-                                        img.img-fluid.rounded(src='img/featur-1.jpg' alt='Image')
-                                    div
-                                        h6.mb-2 Big Banana
-                                        .d-flex.mb-2
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star
-                                        .d-flex.mb-2
-                                            h5.fw-bold.me-2 2.99 $
-                                            h5.text-danger.text-decoration-line-through 4.11 $
-                                .d-flex.align-items-center.justify-content-start
-                                    .rounded(style='width: 100px; height: 100px;')
-                                        img.img-fluid.rounded(src='img/featur-2.jpg' alt='')
-                                    div
-                                        h6.mb-2 Big Banana
-                                        .d-flex.mb-2
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star
-                                        .d-flex.mb-2
-                                            h5.fw-bold.me-2 2.99 $
-                                            h5.text-danger.text-decoration-line-through 4.11 $
-                                .d-flex.align-items-center.justify-content-start
-                                    .rounded(style='width: 100px; height: 100px;')
-                                        img.img-fluid.rounded(src='img/featur-3.jpg' alt='')
-                                    div
-                                        h6.mb-2 Big Banana
-                                        .d-flex.mb-2
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star
-                                        .d-flex.mb-2
-                                            h5.fw-bold.me-2 2.99 $
-                                            h5.text-danger.text-decoration-line-through 4.11 $
-                                .d-flex.align-items-center.justify-content-start
-                                    .rounded.me-4(style='width: 100px; height: 100px;')
-                                        img.img-fluid.rounded(src='img/vegetable-item-4.jpg' alt='')
-                                    div
-                                        h6.mb-2 Big Banana
-                                        .d-flex.mb-2
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star
-                                        .d-flex.mb-2
-                                            h5.fw-bold.me-2 2.99 $
-                                            h5.text-danger.text-decoration-line-through 4.11 $
-                                .d-flex.align-items-center.justify-content-start
-                                    .rounded.me-4(style='width: 100px; height: 100px;')
-                                        img.img-fluid.rounded(src='img/vegetable-item-5.jpg' alt='')
-                                    div
-                                        h6.mb-2 Big Banana
-                                        .d-flex.mb-2
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star
-                                        .d-flex.mb-2
-                                            h5.fw-bold.me-2 2.99 $
-                                            h5.text-danger.text-decoration-line-through 4.11 $
-                                .d-flex.align-items-center.justify-content-start
-                                    .rounded.me-4(style='width: 100px; height: 100px;')
-                                        img.img-fluid.rounded(src='img/vegetable-item-6.jpg' alt='')
-                                    div
-                                        h6.mb-2 Big Banana
-                                        .d-flex.mb-2
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star.text-secondary
-                                            i.fa.fa-star
-                                        .d-flex.mb-2
-                                            h5.fw-bold.me-2 2.99 $
-                                            h5.text-danger.text-decoration-line-through 4.11 $
-                                .d-flex.justify-content-center.my-4
-                                    a.btn.border.border-secondary.px-4.py-3.rounded-pill.text-primary.w-100(href='#') Vew More
-                            .col-lg-12
-                                .position-relative
-                                    img.img-fluid.w-100.rounded(src='img/banner-fruits.jpg' alt='')
-                                    .position-absolute(style='top: 50%; right: 10px; transform: translateY(-50%);')
-                                        h3.text-secondary.fw-bold
-                                            | Fresh
-                                            br
-                                            |  Fruits
-                                            br
-                                            |  Banner
-                h1.fw-bold.mb-0 Related products
+                                            strong Thương hiệu:
+                                            | Baby Three
+                                        li
+                                            strong Mã sản phẩm:
+                                            | B3-V3-Vinyl
+                                        li
+                                            strong Xuất xứ:
+                                            | Trung Quốc
+
+                                .product-features
+                                    h3 Tính Năng Nổi Bật
+                                    ul
+                                        li
+                                            | Thiết kế dễ thương, phù hợp làm quà tặng cho trẻ em hoặc những người sưu tầm.
+                                        li
+                                            | Chất liệu PVC và ABS bền đẹp, an toàn cho người sử dụng.
+                                        li
+                                            | Dễ dàng bảo quản và vệ sinh.
+                                        li
+                                            | Được đóng gói trong hộp màu sang trọng, rất phù hợp để làm quà tặng.
+
+                                .product-advantages
+                                    h3 Lợi Ích Khi Sử Dụng
+                                    ul
+                                        li
+                                            | Giúp phát triển trí tưởng tượng và khả năng sáng tạo của trẻ em.
+                                        li
+                                            | Là món đồ chơi bổ ích cho bé, giúp bé học hỏi và vui chơi mỗi ngày.
+                                        li
+                                            | Chất liệu an toàn, không gây hại cho sức khỏe của trẻ nhỏ.
+                                        li
+                                            | Món quà ý nghĩa cho những người yêu thích sưu tầm đồ chơi mô hình.
+
+                                .product-notes
+                                    h3 Lưu Ý Khi Sử Dụng
+                                    p
+                                        | Sản phẩm không phù hợp cho trẻ em dưới 3 tuổi vì có thể gây nguy hiểm do các chi tiết nhỏ.
+                                    p
+                                        | Tránh để sản phẩm tiếp xúc với nhiệt độ cao hoặc nước nóng.
+                                    p
+                                        | Vệ sinh sản phẩm thường xuyên bằng vải mềm để giữ cho sản phẩm luôn như mới.
+
+                                .product-reviews
+                                    h3 Đánh Giá Sản Phẩm
+                                    .review-box
+                                        .review-title
+                                            h4 Đánh giá của khách hàng
+                                        .review-item
+                                            .review-rating
+                                                span ★★★★☆
+                                            .review-comment
+                                                p Đây là một món đồ chơi tuyệt vời, bé nhà tôi rất thích. Chất lượng rất tốt và đáng tiền!
+                                        .review-item
+                                            .review-rating
+                                                span ★★★★☆
+                                            .review-comment
+                                                p Sản phẩm rất đẹp và tinh xảo, nhưng tôi nghĩ có thể cải thiện thêm một chút về chi tiết.
+                                    button.btn.btn-primary.mt-3.btn-primari Thêm Đánh Giá
+
+                        #account.tab-pane.fade(role='tabpanel' aria-labelledby='pills-profile-tab' tabindex='0')
+                            .warranty-info
+                                h3 Thông Tin Bảo Hành
+                                p Sản phẩm này được bảo hành trong vòng 12 tháng kể từ ngày mua.
+                                p Bảo hành áp dụng cho các lỗi kỹ thuật từ nhà sản xuất.
+                                p Lưu ý: Không bảo hành đối với các hư hỏng do người sử dụng.
+                                p Liên hệ với chúng tôi để biết thêm chi tiết.
+
+                h1.title.text-uppercase.text-center.my-4 Sản Phẩm Liên Quan
                 .vesitable
-                    .owl-carousel.vegetable-carousel.justify-content-center.owl-loaded.owl-drag
-                        .owl-stage-outer
-                            .owl-stage(style='transform: translate3d(-2972px, 0px, 0px); transition: 1.5s; width: 5284px;')
+                    .responsive
+                        - for (var i = 1; i < 10; i++)
+                            .owl-stage
                                 .owl-item.cloned(style='width: 305.25px; margin-right: 25px;')
                                     .border.border-primary.rounded.position-relative.vesitable-item
                                         .vesitable-img
@@ -295,223 +227,14 @@ block content
                                                 a.btn.border.border-secondary.rounded-pill.px-3.py-1.mb-4.text-primary(href='#')
                                                     i.fa.fa-shopping-bag.me-2.text-primary
                                                     |  Add to cart
-                                .owl-item.cloned(style='width: 305.25px; margin-right: 25px;')
-                                    .border.border-primary.rounded.position-relative.vesitable-item
-                                        .vesitable-img
-                                            img.img-fluid.w-100.rounded-top(src='img/vegetable-item-6.jpg' alt='')
-                                        .text-white.bg-primary.px-3.py-1.rounded.position-absolute(style='top: 10px; right: 10px;') Vegetable
-                                        .p-4.pb-0.rounded-bottom
-                                            h4 Parsely
-                                            p
-                                                | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                            .d-flex.justify-content-between.flex-lg-wrap
-                                                p.text-dark.fs-5.fw-bold $7.99 / kg
-                                                a.btn.border.border-secondary.rounded-pill.px-3.py-1.mb-4.text-primary(href='#')
-                                                    i.fa.fa-shopping-bag.me-2.text-primary
-                                                    |  Add to cart
-                                .owl-item.cloned(style='width: 305.25px; margin-right: 25px;')
-                                    .border.border-primary.rounded.position-relative.vesitable-item
-                                        .vesitable-img
-                                            img.img-fluid.w-100.rounded-top(src='img/vegetable-item-5.jpg' alt='')
-                                        .text-white.bg-primary.px-3.py-1.rounded.position-absolute(style='top: 10px; right: 10px;') Vegetable
-                                        .p-4.pb-0.rounded-bottom
-                                            h4 Potatoes
-                                            p
-                                                | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                            .d-flex.justify-content-between.flex-lg-wrap
-                                                p.text-dark.fs-5.fw-bold $7.99 / kg
-                                                a.btn.border.border-secondary.rounded-pill.px-3.py-1.mb-4.text-primary(href='#')
-                                                    i.fa.fa-shopping-bag.me-2.text-primary
-                                                    |  Add to cart
-                                .owl-item.cloned(style='width: 305.25px; margin-right: 25px;')
-                                    .border.border-primary.rounded.position-relative.vesitable-item
-                                        .vesitable-img
-                                            img.img-fluid.w-100.rounded-top(src='img/vegetable-item-6.jpg' alt='')
-                                        .text-white.bg-primary.px-3.py-1.rounded.position-absolute(style='top: 10px; right: 10px;') Vegetable
-                                        .p-4.pb-0.rounded-bottom
-                                            h4 Parsely
-                                            p
-                                                | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                            .d-flex.justify-content-between.flex-lg-wrap
-                                                p.text-dark.fs-5.fw-bold $7.99 / kg
-                                                a.btn.border.border-secondary.rounded-pill.px-3.py-1.mb-4.text-primary(href='#')
-                                                    i.fa.fa-shopping-bag.me-2.text-primary
-                                                    |  Add to cart
-                                .owl-item(style='width: 305.25px; margin-right: 25px;')
-                                    .border.border-primary.rounded.position-relative.vesitable-item
-                                        .vesitable-img
-                                            img.img-fluid.w-100.rounded-top(src='img/vegetable-item-6.jpg' alt='')
-                                        .text-white.bg-primary.px-3.py-1.rounded.position-absolute(style='top: 10px; right: 10px;') Vegetable
-                                        .p-4.pb-0.rounded-bottom
-                                            h4 Parsely
-                                            p
-                                                | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                            .d-flex.justify-content-between.flex-lg-wrap
-                                                p.text-dark.fs-5.fw-bold $4.99 / kg
-                                                a.btn.border.border-secondary.rounded-pill.px-3.py-1.mb-4.text-primary(href='#')
-                                                    i.fa.fa-shopping-bag.me-2.text-primary
-                                                    |  Add to cart
-                                .owl-item(style='width: 305.25px; margin-right: 25px;')
-                                    .border.border-primary.rounded.position-relative.vesitable-item
-                                        .vesitable-img
-                                            img.img-fluid.w-100.rounded-top(src='img/vegetable-item-1.jpg' alt='')
-                                        .text-white.bg-primary.px-3.py-1.rounded.position-absolute(style='top: 10px; right: 10px;') Vegetable
-                                        .p-4.pb-0.rounded-bottom
-                                            h4 Parsely
-                                            p
-                                                | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                            .d-flex.justify-content-between.flex-lg-wrap
-                                                p.text-dark.fs-5.fw-bold $4.99 / kg
-                                                a.btn.border.border-secondary.rounded-pill.px-3.py-1.mb-4.text-primary(href='#')
-                                                    i.fa.fa-shopping-bag.me-2.text-primary
-                                                    |  Add to cart
-                                .owl-item(style='width: 305.25px; margin-right: 25px;')
-                                    .border.border-primary.rounded.position-relative.vesitable-item
-                                        .vesitable-img
-                                            img.img-fluid.w-100.rounded-top.bg-light(src='img/vegetable-item-3.png' alt='')
-                                        .text-white.bg-primary.px-3.py-1.rounded.position-absolute(style='top: 10px; right: 10px;') Vegetable
-                                        .p-4.pb-0.rounded-bottom
-                                            h4 Banana
-                                            p
-                                                | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                            .d-flex.justify-content-between.flex-lg-wrap
-                                                p.text-dark.fs-5.fw-bold $7.99 / kg
-                                                a.btn.border.border-secondary.rounded-pill.px-3.py-1.mb-4.text-primary(href='#')
-                                                    i.fa.fa-shopping-bag.me-2.text-primary
-                                                    |  Add to cart
-                                .owl-item(style='width: 305.25px; margin-right: 25px;')
-                                    .border.border-primary.rounded.position-relative.vesitable-item
-                                        .vesitable-img
-                                            img.img-fluid.w-100.rounded-top(src='img/vegetable-item-4.jpg' alt='')
-                                        .text-white.bg-primary.px-3.py-1.rounded.position-absolute(style='top: 10px; right: 10px;') Vegetable
-                                        .p-4.pb-0.rounded-bottom
-                                            h4 Bell Papper
-                                            p
-                                                | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                            .d-flex.justify-content-between.flex-lg-wrap
-                                                p.text-dark.fs-5.fw-bold $7.99 / kg
-                                                a.btn.border.border-secondary.rounded-pill.px-3.py-1.mb-4.text-primary(href='#')
-                                                    i.fa.fa-shopping-bag.me-2.text-primary
-                                                    |  Add to cart
-                                .owl-item(style='width: 305.25px; margin-right: 25px;')
-                                    .border.border-primary.rounded.position-relative.vesitable-item
-                                        .vesitable-img
-                                            img.img-fluid.w-100.rounded-top(src='img/vegetable-item-5.jpg' alt='')
-                                        .text-white.bg-primary.px-3.py-1.rounded.position-absolute(style='top: 10px; right: 10px;') Vegetable
-                                        .p-4.pb-0.rounded-bottom
-                                            h4 Potatoes
-                                            p
-                                                | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                            .d-flex.justify-content-between.flex-lg-wrap
-                                                p.text-dark.fs-5.fw-bold $7.99 / kg
-                                                a.btn.border.border-secondary.rounded-pill.px-3.py-1.mb-4.text-primary(href='#')
-                                                    i.fa.fa-shopping-bag.me-2.text-primary
-                                                    |  Add to cart
-                                .owl-item.active(style='width: 305.25px; margin-right: 25px;')
-                                    .border.border-primary.rounded.position-relative.vesitable-item
-                                        .vesitable-img
-                                            img.img-fluid.w-100.rounded-top(src='img/vegetable-item-6.jpg' alt='')
-                                        .text-white.bg-primary.px-3.py-1.rounded.position-absolute(style='top: 10px; right: 10px;') Vegetable
-                                        .p-4.pb-0.rounded-bottom
-                                            h4 Parsely
-                                            p
-                                                | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                            .d-flex.justify-content-between.flex-lg-wrap
-                                                p.text-dark.fs-5.fw-bold $7.99 / kg
-                                                a.btn.border.border-secondary.rounded-pill.px-3.py-1.mb-4.text-primary(href='#')
-                                                    i.fa.fa-shopping-bag.me-2.text-primary
-                                                    |  Add to cart
-                                .owl-item.active(style='width: 305.25px; margin-right: 25px;')
-                                    .border.border-primary.rounded.position-relative.vesitable-item
-                                        .vesitable-img
-                                            img.img-fluid.w-100.rounded-top(src='img/vegetable-item-5.jpg' alt='')
-                                        .text-white.bg-primary.px-3.py-1.rounded.position-absolute(style='top: 10px; right: 10px;') Vegetable
-                                        .p-4.pb-0.rounded-bottom
-                                            h4 Potatoes
-                                            p
-                                                | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                            .d-flex.justify-content-between.flex-lg-wrap
-                                                p.text-dark.fs-5.fw-bold $7.99 / kg
-                                                a.btn.border.border-secondary.rounded-pill.px-3.py-1.mb-4.text-primary(href='#')
-                                                    i.fa.fa-shopping-bag.me-2.text-primary
-                                                    |  Add to cart
-                                .owl-item.active(style='width: 305.25px; margin-right: 25px;')
-                                    .border.border-primary.rounded.position-relative.vesitable-item
-                                        .vesitable-img
-                                            img.img-fluid.w-100.rounded-top(src='img/vegetable-item-6.jpg' alt='')
-                                        .text-white.bg-primary.px-3.py-1.rounded.position-absolute(style='top: 10px; right: 10px;') Vegetable
-                                        .p-4.pb-0.rounded-bottom
-                                            h4 Parsely
-                                            p
-                                                | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                            .d-flex.justify-content-between.flex-lg-wrap
-                                                p.text-dark.fs-5.fw-bold $7.99 / kg
-                                                a.btn.border.border-secondary.rounded-pill.px-3.py-1.mb-4.text-primary(href='#')
-                                                    i.fa.fa-shopping-bag.me-2.text-primary
-                                                    |  Add to cart
-                                .owl-item.cloned.active(style='width: 305.25px; margin-right: 25px;')
-                                    .border.border-primary.rounded.position-relative.vesitable-item
-                                        .vesitable-img
-                                            img.img-fluid.w-100.rounded-top(src='img/vegetable-item-6.jpg' alt='')
-                                        .text-white.bg-primary.px-3.py-1.rounded.position-absolute(style='top: 10px; right: 10px;') Vegetable
-                                        .p-4.pb-0.rounded-bottom
-                                            h4 Parsely
-                                            p
-                                                | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                            .d-flex.justify-content-between.flex-lg-wrap
-                                                p.text-dark.fs-5.fw-bold $4.99 / kg
-                                                a.btn.border.border-secondary.rounded-pill.px-3.py-1.mb-4.text-primary(href='#')
-                                                    i.fa.fa-shopping-bag.me-2.text-primary
-                                                    |  Add to cart
-                                .owl-item.cloned(style='width: 305.25px; margin-right: 25px;')
-                                    .border.border-primary.rounded.position-relative.vesitable-item
-                                        .vesitable-img
-                                            img.img-fluid.w-100.rounded-top(src='img/vegetable-item-1.jpg' alt='')
-                                        .text-white.bg-primary.px-3.py-1.rounded.position-absolute(style='top: 10px; right: 10px;') Vegetable
-                                        .p-4.pb-0.rounded-bottom
-                                            h4 Parsely
-                                            p
-                                                | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                            .d-flex.justify-content-between.flex-lg-wrap
-                                                p.text-dark.fs-5.fw-bold $4.99 / kg
-                                                a.btn.border.border-secondary.rounded-pill.px-3.py-1.mb-4.text-primary(href='#')
-                                                    i.fa.fa-shopping-bag.me-2.text-primary
-                                                    |  Add to cart
-                                .owl-item.cloned(style='width: 305.25px; margin-right: 25px;')
-                                    .border.border-primary.rounded.position-relative.vesitable-item
-                                        .vesitable-img
-                                            img.img-fluid.w-100.rounded-top.bg-light(src='img/vegetable-item-3.png' alt='')
-                                        .text-white.bg-primary.px-3.py-1.rounded.position-absolute(style='top: 10px; right: 10px;') Vegetable
-                                        .p-4.pb-0.rounded-bottom
-                                            h4 Banana
-                                            p
-                                                | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                            .d-flex.justify-content-between.flex-lg-wrap
-                                                p.text-dark.fs-5.fw-bold $7.99 / kg
-                                                a.btn.border.border-secondary.rounded-pill.px-3.py-1.mb-4.text-primary(href='#')
-                                                    i.fa.fa-shopping-bag.me-2.text-primary
-                                                    |  Add to cart
-                                .owl-item.cloned(style='width: 305.25px; margin-right: 25px;')
-                                    .border.border-primary.rounded.position-relative.vesitable-item
-                                        .vesitable-img
-                                            img.img-fluid.w-100.rounded-top(src='img/vegetable-item-4.jpg' alt='')
-                                        .text-white.bg-primary.px-3.py-1.rounded.position-absolute(style='top: 10px; right: 10px;') Vegetable
-                                        .p-4.pb-0.rounded-bottom
-                                            h4 Bell Papper
-                                            p
-                                                | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                            .d-flex.justify-content-between.flex-lg-wrap
-                                                p.text-dark.fs-5.fw-bold $7.99 / kg
-                                                a.btn.border.border-secondary.rounded-pill.px-3.py-1.mb-4.text-primary(href='#')
-                                                    i.fa.fa-shopping-bag.me-2.text-primary
-                                                    |  Add to cart
-                        .owl-nav
-                            .owl-prev
-                                i.bi.bi-arrow-left
-                            .owl-next
-                                i.bi.bi-arrow-right
-                        .owl-dots
-                            .owl-dot
-                                span
-                            .owl-dot.active
-                                span
+
+                    .owl-nav
+                        .owl-prev
+                            i.fa-solid.fa-left
+                        .owl-next
+                            i.fa-solid.fa-right
+                    .owl-dots
+                        .owl-dot.active
+                            span
+                        .owl-dot
+                            span

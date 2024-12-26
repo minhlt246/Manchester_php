@@ -22,6 +22,10 @@
   },
   "homepage": "https://github.com/minhlt246/Manchester_php.git",
   "dependencies": {
+    "express": "^4.21.2",
+    "jquery": "^3.7.1",
+    "owl.carousel": "^2.3.4",
+    "pug": "^3.0.3",
     "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.77.6"
   }
